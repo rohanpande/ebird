@@ -16,15 +16,12 @@ class Observations extends Component {
     console.log(lon);
     return (
       <td key={locationData.city.name} >
-        <GoogleMap lon={lon} lat={lat}/>
+        <GoogleMap lon={lon} lat={lat} markers={[[lon,lat]]}/>
       </td>
     );
   }
 
   render(){
-    const lon = 42.46;
-    const lat = 76.51;
-
     return(
       <table className="table table-hover">
           <thead>
