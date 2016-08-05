@@ -16,7 +16,7 @@ class Observations extends Component {
     console.log(lon);
     return (
       <td key={locationData.city.name} >
-        <GoogleMap lon={lon} lat={lat} markers={[[lon,lat]]}/>
+        <GoogleMap  lon={lon} lat={lat} markers={[{lon:lon,lat:lat}]}/>
       </td>
     );
   }
